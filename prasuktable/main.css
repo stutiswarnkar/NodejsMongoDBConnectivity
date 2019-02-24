@@ -1,0 +1,31 @@
+#pollution {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: solid;
+  border-style: ridge;
+}
+/* html{
+ background: linear-gradient(to bottom, #99ff99 0%, #ffff99 100%);
+} */
+body{
+  counter-reset:Serial;
+}
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
+#pollution td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+#pollution th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #155545;
+  color: white;
+}
